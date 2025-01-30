@@ -123,7 +123,7 @@
     </div>
 
     <script>
-      function sayYes() {
+        function sayYes() {
     document.body.style.display = "flex";
     document.body.style.flexDirection = "column";
     document.body.style.alignItems = "center";
@@ -132,9 +132,9 @@
     document.body.style.padding = "20px";
     document.body.style.background = "#ffe6e6"; // Keeping the soft pink background
 
-    document.body.innerHTML = 
+    document.body.innerHTML = `
        <div style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
-    <img src="https://github.com/sneha21099/Personal-Val/blob/main/love.jpeg" alt="Us Together" cache_buster=" + Math.random()
+    <img src="https://github.com/sneha21099/Personal-Val/blob/main/love.jpeg" alt="Us Together" 
          style="max-width: 170px; width: 100%; height: auto; border-radius: 9px; 
                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); margin: 0; padding: 0;">
     
@@ -144,10 +144,10 @@
 </div>
 
        
-    ;
+    `;
+
     startHeartAnimation();
 }
-
 
         function spawnYesButtons() {
             for (let i = 0; i < 10; i++) {
