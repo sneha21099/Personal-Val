@@ -124,9 +124,30 @@
 
     <script>
         function sayYes() {
-            document.body.innerHTML = "<h1>YAY! ❤️ I love you so much Saduu Babuu! ❤️</h1><h2>Counting down the moments until I get to hold you close in Manali.</h2> <h3>This Valentine’s Day will be magical with you! ❄️💕</h3>";
-            startHeartAnimation();
-        }
+    document.body.style.display = "flex";
+    document.body.style.flexDirection = "column";
+    document.body.style.alignItems = "center";
+    document.body.style.justifyContent = "center";
+    document.body.style.textAlign = "center";
+    document.body.style.padding = "20px";
+    document.body.style.background = "#ffe6e6"; // Keeping the soft pink background
+
+    document.body.innerHTML = `
+       <div style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
+    <img src="love.jpeg" alt="Us Together" 
+         style="max-width: 170px; width: 100%; height: auto; border-radius: 9px; 
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); margin: 0; padding: 0;">
+    
+    <h1 style="margin: 5px 0;">YAY! ❤️ I love you so much Saduu Babuu! ❤️</h1>
+    <h2 style="margin: 5px 0;">Counting down the moments until I get to hold you close in Manali.</h2>
+    <h3 style="margin: 5px 0;">This Valentine’s Day will be magical with you! ❄️💕</h3>
+</div>
+
+       
+    `;
+
+    startHeartAnimation();
+}
 
         function spawnYesButtons() {
             for (let i = 0; i < 10; i++) {
